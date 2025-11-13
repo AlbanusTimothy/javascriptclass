@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Validation Tasks</title>
+</head>
+<body>
+  <h2>Validation Tasks</h2>
+
+  <script>
+    // -------------------------------
+    // 1️⃣ Check if a number is between 0 and 100
+    // -------------------------------
+    let number = Number(prompt("Enter a number:"))
+    let isBetween0And100 = number >= 0 && number <= 100
+    console.log("Is the number between 0 and 100?", isBetween0And100)
+    // user interface
+    document.write("<b>1. Is the number between 0 and 100?</b> " + isBetween0And100 + "<br><br>")
+
+    // -------------------------------
+    // 2️⃣ Check if email is valid 
+    // -------------------------------
+    let email = prompt("Enter your email:")
+
+    // email  contains '@' and '.'
+    let isValidEmail = email.includes("@") && email.includes(".") && email.indexOf("@") > 0 && email.indexOf(".") > email.indexOf("@") + 1
+    console.log("Is the email valid?", isValidEmail)
+    // user interface
+    document.write("<b>2. Is the email valid?</b> " + isValidEmail + "<br><br>")
+
+    // -------------------------------
+    // 3️⃣ Check if phone number is a valid Kenyan number
+    // -------------------------------
+   let phone = prompt("Enter your phone number:")
+
+// remove spaces and dashes
+phone = phone.split(" ").join("").split("-").join("")
+
+// Validation
+let isValidKenyanPhone = false
+
+if (
+    (phone.length === 13 && phone.startsWith("+2547")) || 
+    (phone.length === 12 && phone.startsWith("2547"))  || 
+    (phone.length === 10 && phone.startsWith("07"))    || 
+    (phone.length === 9  && phone.startsWith("7"))     || 
+    (phone.length === 10 && phone.startsWith("011"))   || 
+    (phone.length === 9  && phone.startsWith("1"))
+) {
+    isValidKenyanPhone = true
+}
+
+console.log("Is the phone number valid (Kenya)?", isValidKenyanPhone)
+// user interface
+document.write("<b>3. Is the phone number valid (Kenya)?</b> " + isValidKenyanPhone + "<br><br>")
+
+  </script>
+</body>
+</html>

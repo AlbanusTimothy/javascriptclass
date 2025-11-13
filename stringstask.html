@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>String Tasks</title>
+</head>
+<body>
+  <h2>String Manipulation Tasks</h2>
+
+  <script>
+    //  Question 1: Clean up the variable
+    let f_name = "  JOHn  ."
+    f_name = f_name.trim()        // remove spaces at start and end
+    f_name = f_name.replace(".", "") // remove dot
+    f_name = f_name.toLowerCase() // convert to lowercase
+    document.write("<b>1. Clean name:</b> " + f_name + "<br><br>")
+
+
+    //  Question 2a: Slice from sentence_one
+    let sentence_one = "The Dog Breed is German Shepherd"
+    // Extract "Breed is German"
+    let sliced1 = sentence_one.slice(8, 23)
+    document.write("<b>2a. Sliced sentence_one:</b> " + sliced1 + "<br>")
+
+    //  Question 2b: Slice from sentence_two
+    let sentence_two = "Defeats for the Clinton forces, this was her moment of triumph"
+    // Extract "Clinton forces"
+    let sliced2 = sentence_two.slice(16, 31)
+    document.write("<b>2b. Sliced sentence_two:</b> " + sliced2 + "<br><br>")
+
+
+    //  Question 3: Split sentence using semicolon
+    let text = "The lazy dog; ran so fast; it hit the wall."
+    let parts = text.split(";")   // split by semicolon
+    let lengthOfParts = parts.length
+    document.write("<b>3. Number of parts after split:</b> " + lengthOfParts + "<br>")
+    document.write("<b>Parts:</b> " + parts.join(" | "))
+  </script>
+
+</body>
+</html>

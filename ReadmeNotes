@@ -1,0 +1,155 @@
+
+**INTRODUCTION TO JAVASCRIPY**
+--basic building blocks of the web:
+1.HTML
+2.CSS
+3.JS--defines the behaviour of a webpage
+
+**JS is a high level interpreted language used to make web pages interactive or dynamic
+--->it runs directly in your browser
+--->JS does the following
+1.user interactivity--ability of the webpage to respond to user action e.g. button clicks,animations,form inputs
+2.Reactivity
+
+Writing JS
+1.Internal JS--a script in a HTML file
+   (i) script in the body section- right above the closing body tag(the recomended way)
+   (ii) a script in the head section
+2.External JS-----The best way
+------create an external JS file with a .js extension and then limk to a html file using a source(src) attribute   
+
+**VARIABLES**
+A variable is a named container or memory space used to store values
+--->ways of declaring variables in JS
+1. using the let keyword
+---most common way of declaring avariable
+---variables declared using let can be re assigned meaning values can be changed
+eg--- let x = 5// declaration
+x = 10 reassigned//
+2. using const keyword
+---variables once declared cant be reasigned or changed in value
+eg const name = "jane"--> this cant be changed
+3. using the var keyword
+---works just like let but its outdated it works in older browsers
+
+JS DATATYPES
+1.string-- represents textual data or charachters enclosed in quotation marks
+2.Number--numeric values-- both whole numbers and decimal numbers
+3.boolean--represents truth values -- true and false
+
+
+How to output in JS...
+console.log()
+checking type of data = typeof()
+
+**STRING METHODS & OPERATIONS**
+
+- Methods are inbuilt functions used to manipulate data
+
+1. Concatenation – joining or combining strings
+    a) Using "+" operator
+    b) using concat() method
+2. Template literals - a way of embedding or including variables inside strings
+     -we use: backticks,dollar signs and curly braces   
+3. Accessing charachters in a string- strings are ordered--use indexing
+      n/b:-in accessing string charachters in JS, we dont have negative indexes 
+4.determining no of charachters in a string-- we use .length   
+5. .slice() returns a portion/ substring of a full string syntax=console.log(text.slice(0,4))
+--slicing accepts negative index but it picks and moves forward not backwards
+6. .toUppercase()--converts a string to uppercase format
+7. .toLowercase()---converts a string to lowercase format
+8. .includes()--checks whether a string has a specified charachters or substring--- and it returns a boolean
+9. .startsWith()--checks whether a string starts with a specific char or substring they return boolean together with ends with
+10. .endsWith() checks whether a string ends with a specific char or substring
+11. .indexOf()---returns the first occurence of a specified charachter
+12. .replace()---replaces specified charachter/s with an ew one
+13. .trim()--removes all wide spaces around values  
+
+**Numeric Operations**
+1. addition
+2. subtraction
+3. division
+4. multiplication- *
+6. exponent- **
+7. modulus - %
+8. incriment operator ++
+9. decrement operator --
+10. .toString()- converts a number to a string
+11. toFixed()- rounds off a number to specified decimal spaces
+12. math.round()-- rounds a number to the nearest integer
+13. math.floor-- rounds down
+14. math.ceil---rounds up
+
+                        **LESSON 2**
+**User Input**
+-Makes programs interactive and dynamic
+-In JS we take user input using prompt()
+-Any data coming from user input is always a string
+**Changing Data Type**
+**String -> Number
+**Number -> String
+**Boolean conversions
+
+1.Type conversion -> manual changing of data from one type to another
+                -> explicitly done by the programmer
+        **Convert string to number**
+        a)Number() - convert string to number
+        b)parseInt() - convert string to integer
+        c)parseFloat() -convert string to decimal number
+
+        **Convert number to string**
+        a) String()
+        b).toString()
+
+2.Type coercion - where data is automatically changed from one type to another by 
+                the language / interpreter 
+                -> not changed by the programmer
+        -> Polymorphism -> operator overloading -> an operator takes more than one form
+        + -> concat -> addition
+
+**JS OPERATORS**
+-> Operators are symbols used to perfom specific tasks
+-> We have 4 categories of operators:
+1.Arithmetic Operators -numeric operations
+-> + (addition)
+-> - (subtract)
+-> / (divide)
+-> * (multiply)
+-> ** (exponential)
+-> % (modulus)
+-> ++(increment) - increases by 1
+-> --(decrement) - decreases by 1
+
+2.Comparison Operators -compares values
+-> == (loose equality) -> type coercion happens -> checks only for the value not data type
+-> ===(strict equality) -> no type coercion -> checks for both value and data type
+-> != (loose inequality)
+-> !==(strict inequality)
+-> > (greater than)
+-> < (less than)
+-> >= (greater than or equal to)
+-> <= (less than or equal to)
+
+3.Logical Operators - logical operations
+-> Logical and - && ->  returns true only if both conditions are true
+-> Logical or -> || -> returns true if t least on condition is true
+-> Logical not -> ! - returns the opposite of a Boolean value
+
+
+4.Assignment Operators - assigns values
+-> = (assign)
+-> += (add and assign)
+-> -= (subtract nd assign)
+-> *= (multiply and assign)
+-> /= (divide and assign)
+-> **= (raise to a number and assign)
+-> %= (get remainder and assign)
+
+
+**Task**
+1.Find out what the 'in' operator does and illustrate with Javascript code - use w3schools or geeksforgeeks as references
+2. Write a program that takes 2 numeric user inputs and outputs the following:
+  -> their sum
+  -> their subtraction
+  -> their modulus
+  -> their exponent

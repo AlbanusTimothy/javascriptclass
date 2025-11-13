@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>string operations</p>
+    </div>
+    <script>
+        // concat
+        let first_name ="Alba"
+        let second_name ="Timothy"
+        let full_name = first_name.concat(" ",second_name)
+
+        let full_name2 = first_name + second_name
+        console.log(full_name)
+        console.log(full_name2)
+
+        // template literals
+        console.log(`my full name is ${full_name}`)
+        // accessing chars
+        console.log(first_name[0])
+        // length
+        let sentence = " my dog is black"
+        console.log(sentence.length)
+        // slicing
+        console.log(first_name.slice(0,4))
+        // uppercase and lowercase
+        let minimal = "i am new in block"
+        console.log(minimal.toUpperCase())
+        let minimal2 = "I AM NEW IN BLOCK"
+        console.log(minimal2.toLowerCase())
+        // includes
+        console.log(minimal.includes("new"))
+        // startswith and endswith
+        console.log(minimal.startsWith("i"))
+        console.log(minimal2.endsWith("block"))
+        // indexOf
+        let jina = "Lionel"
+        console.log(jina.indexOf("i"))
+        // replace
+        let new_jina=console.log(jina.replace("Lionel","Messi"))
+        // trim
+        let lang="  javascript  "
+        console.log(lang.trim())
+    </script>
+    
+</body>
+</html>
