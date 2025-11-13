@@ -1,0 +1,28 @@
+<!-- a programme to check the largest of three user inputed numbers -->
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Largest of Three Numbers</title>
+</head>
+<body>
+    <script>
+        //  user inputs
+        let num1 = Number(prompt("Enter the first number:"));
+        let num2 = Number(prompt("Enter the second number:"));
+        let num3 = Number(prompt("Enter the third number:"));
+
+        // Find the largest
+        let largest;
+        if (num1 >= num2 && num1 >= num3) {
+            largest = num1;
+        } else if (num2 >= num1 && num2 >= num3) {
+            largest = num2;
+        } else {
+            largest = num3;
+        }
+
+        //result
+        document.write("<b>The largest number is " + largest + "</b><br>");
+    </script>
+</body>
+</html>

@@ -153,3 +153,46 @@ checking type of data = typeof()
   -> their subtraction
   -> their modulus
   -> their exponent
+
+**CONDITIONAL STATEMENTS**
+Enables a program to make decisions based on inputs
+** Types of conditional statements**
+-> if else ->
+->if ,else if,else
+->conditional expretions-->ternary operator
+
+general syntax:
+{}-->represents a block of code
+scenario one--** one condition to be met** eg checking whether a number is even or not
+if (condition){
+    //what happens if condition is met
+
+}else{
+    //what happens when the condition is false
+}
+
+scenario two--** multiple conditions**eg checking students grades
+if (condition 1){
+    //what happens if condition 1 is true
+}
+else if (condition 2){
+    //what happens if condition 2 is true
+}
+else if( condition 3){
+    //what happens if condition 3 is true
+}else{
+    //what happens when all conditions are false
+}
+        in class task
+1. write a js program that checks if a number is even or odd
+2. write a js programm that displays the largest interger among three intergers
+--> for each of the tasks take user input        
+
+**Ternary operator**
+-> ?
+-> it is the shorthand of if else statements
+->it works with only one condtion
+-> the syntax
+        condition ? what happens if true: what happens if false
+             task
+q. using ternary operator check if a person is eligible to vote.--> anyone voting has to be 18 years and older                     
