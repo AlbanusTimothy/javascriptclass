@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap year checker</title>
+</head>
+<body>
+    <div>
+        <p>
+            <b>Leap year checker</b>
+        </p>
+    </div>
+    <script>
+let year = Number(prompt("Enter a year:"));
+
+let result =
+  (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0
+    ? "Leap year"
+    : "Not a leap year";
+
+console.log(result);
+</script>
+
+</body>
+</html>
