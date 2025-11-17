@@ -1,0 +1,36 @@
+<!-- checking the season of the year -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>season checker</title>
+ </head>
+ <body>
+    <div>
+        <p>
+            <b>season checker</b>
+        </p>
+    </div>
+    <script>
+        let month = prompt("Enter month:").toLowerCase();
+
+if (month === "september" || month === "october" || month === "november") {
+  console.log("Autumn");
+} 
+else if (month === "december" || month === "january" || month === "february") {
+  console.log("Winter");
+} 
+else if (month === "march" || month === "april" || month === "may") {
+  console.log("Spring");
+} 
+else if (month === "june" || month === "july" || month === "august") {
+  console.log("Summer");
+} 
+else {
+  console.log("Invalid month");
+}
+
+    </script>
+ </body>
+ </html>

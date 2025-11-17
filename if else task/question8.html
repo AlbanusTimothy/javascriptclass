@@ -1,0 +1,53 @@
+<!-- programme to arrange numbers from smallest to largest -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smallest to largest</title>
+</head>
+<body>
+    <div>
+        <p>
+            <b>Smallest to largest</b>
+        </p>
+    </div>
+    <script>
+        let a = Number(prompt("Enter first number:"));
+let b = Number(prompt("Enter second number:"));
+let c = Number(prompt("Enter third number:"));
+
+let smallest, middle, largest;
+
+// Find smallest
+if (a <= b && a <= c) {
+  smallest = a;
+} else if (b <= a && b <= c) {
+  smallest = b;
+} else {
+  smallest = c;
+}
+
+// Find largest
+if (a >= b && a >= c) {
+  largest = a;
+} else if (b >= a && b >= c) {
+  largest = b;
+} else {
+  largest = c;
+}
+
+// Middle is the one not smallest and not largest
+if ((a !== smallest) && (a !== largest)) {
+  middle = a;
+} else if ((b !== smallest) && (b !== largest)) {
+  middle = b;
+} else {
+  middle = c;
+}
+
+console.log(smallest, middle, largest);
+
+    </script>
+</body>
+</html>

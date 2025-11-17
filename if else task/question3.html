@@ -1,0 +1,30 @@
+<!-- Write a program that checks if a number is positive, negative, or zero.
+Take user input and use if…else. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>discount calculator</title>
+</head>
+<body>
+    <div>
+        <p>
+            <b>Checking discounts</b>
+        </p>
+    </div>
+    <script>
+        let amount = Number(prompt("Enter purchase amount:"));
+let discount = 0;
+
+if (amount >= 100) {
+  discount = 20;
+} else if (amount >= 50) {
+  discount = 10;
+}
+
+console.log("Discount:", discount);
+
+    </script>
+</body>
+</html>

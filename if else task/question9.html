@@ -1,0 +1,31 @@
+<!-- check whether last digit is divisible by 3 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisibles of 3</title>
+</head>
+<body>
+    <div>
+        <p>
+            <b>Checking whether last digit entered is divisible by 3</b>
+        </p>
+    </div>
+    <script>
+        let input = prompt("Enter any number:");
+let lastDigit = input[input.length - 1]; // last character
+
+// Convert last digit to a number
+let digit = Number(lastDigit);
+
+// Check if last digit is divisible by 3
+if (digit % 3 == 0) {
+  console.log("Last digit is divisible by 3");
+} else {
+  console.log("Last digit is NOT divisible by 3");
+}
+
+    </script>
+</body>
+</html> 

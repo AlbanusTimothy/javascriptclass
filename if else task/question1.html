@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length Checker</title>
+</head>
+<body>
+    <div>
+        <p>
+            <b>
+                Length checker
+            </b>
+        </p>
+    </div>
+    <script>
+        let text = prompt("Enter a string:");
+let length = text.length;
+
+if (length === 0) {
+  console.log("Empty");
+} else if (length >= 1 && length <= 5) {
+  console.log("Short");
+} else if (length >= 6 && length <= 10) {
+  console.log("Medium");
+} else {
+  console.log("Long");
+}
+    </script>
+</body>
+</html>
