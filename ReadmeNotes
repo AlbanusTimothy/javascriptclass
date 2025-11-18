@@ -195,4 +195,35 @@ else if( condition 3){
 -> the syntax
         condition ? what happens if true: what happens if false
              task
-q. using ternary operator check if a person is eligible to vote.--> anyone voting has to be 18 years and older                     
+q. using ternary operator check if a person is eligible to vote.--> anyone voting has to be 18 years and older
+
+
+
+
+
+**JS DATA STRUCTURES**
+we use d/ss to store multiple values in variables
+1. Arrays
+2. Objects
+         **JS ARRAYS**
+A data structure used to hold multiple values in an ordered manner
+represented using []
+->equvalent of lists in python  
+**properties**
+1.they are ordered--indexing
+  n/b no negative indexing in js arrays
+2.mutable--values can be changed
+3.can contain multiple values of any type 
+        **array operation**
+1.creating an array   
+2.accessing values in an array-use indexing and its zero based  
+3.updating values in an array
+--->we can use index 
+4.determining number of values in an array-->we use the length feature
+5.adding items to an array
+  a).add at the end--> we use .push()
+  b).add at the beginning--we use .unshift()
+6.removing items from an array
+a).remove the first item-->we use shift()
+b).remove the last item-->we use pop 
+

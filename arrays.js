@@ -1,0 +1,27 @@
+let values =[1,2,3,"four","five",false,[true,"six","seven"],8,9]
+
+console.log(values)
+console.log(typeof(values))//object
+console.log(Array.isArray(valuesz))
+
+// accessing values
+console.log(values[3])
+// updating values in an array
+let names =["bobb","jack","alice"]
+names[2]="alba"
+console.log(names)//"bob","jack","alba"
+
+// determining the number of values in an array using length
+let no_of_names=names.length
+console.log(no_of_names)
+// adding values at the end
+names.push("Anne","jill")
+console.log(names)
+// adding items at the beginning
+names.unshift('jimmy','markk','Leo')
+console.log(names)
+// remove first item
+names.shift()
+// remove last item
+names.pop
+console.log(name)
