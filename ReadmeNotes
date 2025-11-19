@@ -227,3 +227,32 @@ represented using []
 a).remove the first item-->we use shift()
 b).remove the last item-->we use pop 
 
+           **OBJECTS***
+Object are data strucures that store data in key-value pairs
+-> they are the equivalent of python dictionaries
+     **properties of objects**
+1. store data in key-value pairs
+2. they use keys to access values
+3. keys are unique
+4. keys have to e strings
+5. values can be of any data type
+->objects are represented using {}
+**properties**->this is the cmbination of keys and values  
+properties are comma separated              
+property=key + value
+
+**object operations**
+1. creating an object
+2. accessing values in an object
+     a).Dot notation
+     ->use the dot operator followed by the key
+     ->can only be used with keys that follow identifier(variables) naming rules
+     ->dot notaton cant work for keys with spaces
+     b).bracket notaion
+     ->uses square brackets taking keys as strings ["key]
+     ->can accept keys with spaces
+
+
+
+**object methods**
+     
