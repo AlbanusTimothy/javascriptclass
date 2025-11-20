@@ -37,3 +37,9 @@ console.log(data)
 
 //replacing values with splice
 data.splice(2,2,'five','true')
+
+
+//spread operator -to copy items
+let arr1 =[1,2,3]
+let arr2 =[...arr1]
+console.log(arr2)

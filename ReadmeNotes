@@ -255,4 +255,132 @@ property=key + value
 
 
 **object methods**
-     
+Object Operations
+1.Creating an Object
+2.Accessing values in an object -> use keys
+        a)Dot notation
+        -> use dot operator (.) followed by the key
+        -> dot notation can only be used with keys that follow identifier (variables) naming rules
+        -> dot notation cant work for keys with spaces
+
+        b)Bracket notation
+        -> uses square brackets taking keys as strings ["key"]
+        -> can accept keys with spaces
+
+Object Methods
+1. .keys() - returns all keys of on object in an array
+2. .values() - returns all values of an oobject in an array
+3. .entries() - returns all key-value pairs in an array of arrays
+
+**TASK**
+1.slide 69 & 70 -> arrays
+2.slide 75 & 76 -> objects
+
+3. In the object below , output the following values:
+a) "Deploy to Netlify"
+b.)"updates"
+c.)"Lake View Road" 
+d.) "PostgreSQL"
+
+
+const userProfile = {
+  id: 101,
+  name: {
+    first: "Brian",
+    last: "Letting"
+  },
+  contact: {
+    email: "jeff@example.com",
+    phones: ["+254700000001", "+254700000002"]
+  },
+  address: {
+    current: {
+      city: "Nairobi",
+      street: "Westlands Ave",
+      postalCode: "00100"
+    },
+    previous: [
+      {
+        city: "Eldoret",
+        street: "Main Street",
+        postalCode: "30100"
+      },
+      {
+        city: "Kisumu",
+        street: "Lake View Road",
+        postalCode: "40100"
+      }
+    ]
+  },
+  preferences: {
+    theme: "dark",
+    language: "en",
+    notifications: {
+      email: true,
+      sms: false,
+      push: ["promotions", "updates"]
+    }
+  },
+  projects: [
+    {
+      id: 1,
+      name: "POS System",
+      technologies: ["React", "FastAPI", "PostgreSQL"],
+      tasks: [
+        { title: "Set up DB", done: true },
+        { title: "Design UI", done: false }
+      ]
+    },
+    {
+      id: 2,
+      name: "Portfolio Website",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      tasks: [
+        { title: "Create About Page", done: true },
+        { title: "Deploy to Netlify", done: false }
+      ]
+    }
+  ]
+};     
+
+
+**spread opeators**
+->allows you to expand or unpack an iterable into individual element
+->can be used to copy or merge elements
+
+
+***optional chainning***
+->this is a way to safely access nested properties without running into hard errors
+->it uses the ternary operator
+
+
+**LOOPS**
+A block of code that runs repeatedly untill a specified condition is me
+**types of loops**
+1. for loops
+    ->uses the for keyword
+    ->used when you know or can predict he number of iterations
+2. while loop
+   ->uses th while keyword
+   ->it keeps looping until a condition is false
+3. Do while->executes at least once before checking the loop's condition
+
+**1. for loop**
+syntax:
+for(initialization;condition;update){
+  //block of code to be executed repeatedly
+}
+
+->initialization--starting point of your loop
+->condition-the condition to be met before the loop stops
+->update->increment or decrement(could mean move forward or backword)
+1. looping through an array 
+2. sum numbers using loops
+3. looping backwards
+4. while loop
+
+**task**
+1. read on nested loops and break in js
+2. use while loop to sum numbers from 1 to 10
+3. task on slide 79
+
