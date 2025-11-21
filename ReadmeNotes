@@ -384,3 +384,39 @@ for(initialization;condition;update){
 2. use while loop to sum numbers from 1 to 10
 3. task on slide 79
 
+**nested loops**
+**Nested Loops**
+→ A nested loop is a loop inside another loop  
+→ The outer loop runs first  
+→ For each iteration of the outer loop, the inner loop runs completely  
+
+**Break**
+→ A keyword that stops a loop immediately
+
+
+**FUNCTIONS**
+a block of re usable code that perfoms specific task
+ **why use functions**
+1. code organisatio
+2. re usability
+3. debugging
+4. modularity 
+
+**syntax of a function**
+function function_name(){
+    //block of code
+}
+function_name()
+**parts of a function**
+1. function defination->function keyword+function name+parameters(in some cases)
+2. function body->block of code to be xecuted 
+3. function call->calling the function by its name to execute the code in the body
+
+**variable scopes**
+defines where a variable can beaccessed in a programme
+1. Global variable -- accessible anywhere in the programme
+2. Block level variable--accessible only within its block
+
+**Parameters and arguments**
+-parameters--placeholder variables in place of te real values used to make functions re usable and are passed in function defination 
+-arguments--this are the real values passed when calling a function

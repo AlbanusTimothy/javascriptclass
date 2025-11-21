@@ -30,3 +30,25 @@ while (x<=5){
     console.log(x)
     x++
 }
+
+
+//nested loops
+// nested loops
+for (let i = 1; i <= 5; i++) {
+  for (let j = 1; j <= 5; j++) {
+    console.log(i, j);
+  }
+}
+//multiplication
+for (let i = 1; i <= 5; i++) {
+  for (let j = 0; j <= 5; j++) {
+    console.log(`${i} x ${j} = ${i * j}`);
+  }
+}
+
+//break
+let numbers =[1,2,3,4,5,6,7,8,9,10]
+for ( let i=0;i<numbers.length;i++){
+    if(numbers[i]==5) break;
+    console.log(i)
+}

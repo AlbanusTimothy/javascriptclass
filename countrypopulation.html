@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Population Buckets</title>
+  <style>
+    body {
+      font-family: system-ui,Segoe UI,Roboto,Arial;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    pre {
+      background: #f3f3f3;
+      padding: 12px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Country Population Buckets</h1>
+
+  <script>
+    // Initialize population buckets
+    const pops = { "0-50m": 0, "51-100m": 0, ">100m": 0 };
+
+    // Fetch the JSON from an external file
+    fetch("countries.json")
+      .then(response => response.json())
+      .then(countries => {
+        // Count countries in each population bucket
+        countries.forEach(c => {
+          if (c.population <= 50000000) pops["0-50m"]++;
+          else if (c.population <= 100000000) pops["51-100m"]++;
+          else pops[">100m"]++;
+        });
+
+        // Write result directly to the page
+        document.write("<pre>" + JSON.stringify(pops, null, 2) + "</pre>");
+      })
+      .catch(err => document.write("Failed to load JSON: " + err));
+  </script>
+</body>
+</html>
