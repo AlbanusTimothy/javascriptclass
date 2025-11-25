@@ -26,7 +26,7 @@
 // Task 20: Using Python or PHP or Java or Ruby or JavaScript
 // Continue with the same program and calculate an individual’s Net Salary using:
 //  net_salary = gross_salary - (nhif + nhdf +  nssf + payee)
-let salary = Number(prompt("Enter your gross salary:"));
+let salary = Number(prompt("Enter your salary plus benefits:"));
 
 // Validate input
 if (isNaN(salary) || salary < 0) {
